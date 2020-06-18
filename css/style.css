@@ -1,0 +1,101 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: rgb(231, 249, 117);
+  background: linear-gradient(
+    90deg,
+    rgba(231, 249, 117, 1) 0%,
+    rgba(253, 245, 29, 1) 50%,
+    rgba(247, 180, 39, 1) 100%
+  );
+}
+/* Scoreboard */
+.info {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.scoreboard__name {
+  font-size: 40px;
+  color: red;
+}
+
+.history__title {
+  font-size: 40px;
+  color: red;
+}
+
+.score {
+  font-size: 25px;
+}
+
+.history {
+  width: 256px;
+  height: 84px;
+  overflow: auto;
+  font-size: 25px;
+  text-align: center;
+}
+/* Fields */
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.field-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.field-cell {
+  height: 128px;
+  width: 128px;
+  border: 3px solid black;
+  font-size: 100px;
+  text-align: center;
+}
+
+.win {
+  background-color: lawngreen;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.button_settings {
+  width: 320px;
+  height: 64px;
+  font-size: 36px;
+  border-radius: 24px;
+  margin-top: 20px;
+}
+
+.button_settings {
+  background-color: #001c2e;
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  transform: scale(1);
+}
+
+.button_settings:hover {
+  transform: scale(1.1);
+}
+.button_settings:active,
+.button_settings:focus {
+  outline: none;
+}
+.button_settings:disabled {
+  background-color: lightgray;
+  cursor: default;
+  color: #001c2e;
+}

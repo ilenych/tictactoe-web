@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TicTacToe</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="info">
+        <div class="scoreboard">
+          <h2 class="scoreboard__name">Счет</h2>
+        </div>
+        <h2 class="history__title">История</h2>
+        <div class="score">
+          <div class="score_comp">
+            <span class="score_comp__title">Компьютер:</span>
+            <span class="score_comp__value">0</span>
+          </div>
+          <div class="score_player">
+            <span class="score_player__title">Вы:</span>
+            <span class="score_player__value">0</span>
+          </div>
+        </div>
+        <div class="history"></div>
+      </div>
+      <div class="fields"></div>
+      <div class="buttons">
+        <button class="newRound button_settings">Новый раунд</button>
+        <button class="reset button_settings">Cбросить счет</button>
+      </div>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
